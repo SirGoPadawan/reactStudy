@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    max-width: 1024px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: 0 auto;
+    background-color: #ffe4c4;
+}
+.block, 
+.item, 
+.img-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.item {
+    margin-top: 25px;
+}
+.img-box {
+    width: max-content;
+}
+.count {
+    font-size: 2rem;
+    margin: 0;
+    opacity: 0;
+    transition-duration: 1s;
+}
+.box-item {
+    width: 100%;
+}
+.img-box:hover .count{
+    opacity: 1;
+    transition-duration: 1s;
+} 
