@@ -11,7 +11,15 @@ a {
     margin: 0 auto;
     background-color: #ffe4c4;
 }
-.block, 
+.marker-map { 
+ font-size: 20px; 
+ 
+}
+.marker-map:before{
+content: url(../static/map_marker.svg);
+width: 100%;
+}
+/* .block, 
 .item, 
 .img-box {
     display: flex;
@@ -36,4 +44,4 @@ a {
 .img-box:hover .count{
     opacity: 1;
     transition-duration: 1s;
-} 
+}  */
