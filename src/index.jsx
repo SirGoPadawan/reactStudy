@@ -3,9 +3,11 @@ import ReactDOM from "react-dom";
 
 import createReactClass from 'create-react-class';
 import './css/style.css';
-import SimpleMap from './components/pages/Help.jsx'
+import SimpleMap  from './components/pages/Help.jsx'
 
-let ImageCount = function(props) {
+ReactDOM.render(<SimpleMap />, document.getElementById("root")) 
+
+/* let ImageCount = function(props) {
     return (
         <div className="img-box">
             <p className="count">{props.count}</p>
@@ -60,8 +62,8 @@ let data = [
     }
 
 ]
+ */
 
-ReactDOM.render(<SimpleMap></SimpleMap>, document.getElementById("root"))  
 
 
 /**
