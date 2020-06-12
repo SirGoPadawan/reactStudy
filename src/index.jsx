@@ -1,7 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom"; 
+
 import createReactClass from 'create-react-class';
 import './css/style.css';
+import SimpleMap from './components/pages/Help.jsx'
 
 let ImageCount = function(props) {
     return (
@@ -59,4 +61,22 @@ let data = [
 
 ]
 
-ReactDOM.render(<App datas={data}/>, document.getElementById("root"))  
+ReactDOM.render(<SimpleMap></SimpleMap>, document.getElementById("root"))  
+
+
+/**
+ * TODO:
+ * https://docs.google.com/document/u/0/d/17yEBnzCQ3Uws7ddVpOBPcR9NyiIIJUsTlfIPSY3pWmQ/mobilebasic
+ * Создать ебаный Readme.md
+ * Страницы: 
+ * Главная, Страница просмотра новости, О нас, Помощь, Настройки
+ * дока по ui: https://material-ui.com/ru/getting-started/templates/
+ * подключить шапку, боковую панель. (Адаптивный бургер)
+ * В раздел о нас подключить карту: https://github.com/google-map-react/google-map-react
+ * В раздел помощь Lorem
+ * Подключить react-router
+ * Подключить redux
+ * Научиться программировать
+ * Когда закончу - выйти и заказать место на кладбище. Press to F <3
+ * 
+ */
