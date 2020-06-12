@@ -4,12 +4,16 @@
   "description": "first react app",
   "main": "app.js",
   "dependencies": {
+    "babel-plugin-transform-class-properties": "^6.24.1",
     "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^6.0.2",
     "create-react-class": "^15.6.3",
+    "file-loader": "^6.0.0",
     "google-map-react": "^1.1.7",
+    "prop-types": "^15.7.2",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "save": "^2.4.0"
   },
   "devDependencies": {
     "@babel/core": "^7.10.2",
@@ -24,7 +28,7 @@
     "webpack-dev-server": "^3.11.0"
   },
   "scripts": {
-    "serve": "webpack-dev-server  --open --hot",
+    "serve": "webpack-dev-server  --open",
     "start": "webpack --mode development --watch",
     "build": "webpack --mode production"
   },
