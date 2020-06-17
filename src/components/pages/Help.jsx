@@ -4,7 +4,7 @@ import GoogleMapReact from 'google-map-react';
 const AnyReactComponent = ({ text }) => <div className="marker-map">{text}</div>;
 
 
-export default class SimpleMap extends React.Component {
+class Help extends React.Component {
  static defaultProps = {
     center: {
       lat: 48.461916,
@@ -30,3 +30,4 @@ export default class SimpleMap extends React.Component {
     );
   }
 }
+export default {Map}

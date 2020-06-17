@@ -1,12 +1,12 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const CopyWebpackPlugin = require("copy-webpack-plugin"); 
-const {CleanWebpackPlugin}  = require("clean-webpack-plugin");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
   context: path.resolve("src"),
   mode: "development",
-  entry: "./index.jsx",
+  entry: "./index.js",
   output: {
     filename: "[name].[hash].js",
     path: path.resolve(__dirname, "build"),
@@ -17,12 +17,12 @@ module.exports = {
         test: /\.(jsx|js)$/,
         exclude: /node_modules/,
         use: {
-          loader: "babel-loader"
+          loader: "babel-loader",
         },
       },
       {
         test: /\.css$/,
-        use: ["style-loader", "css-loader"]
+        use: ["style-loader", "css-loader"],
       },
       {
         test: /\.(png|jpg|svg|gif)$/,
@@ -34,13 +34,13 @@ module.exports = {
             },
           },
         ],
-      }
-    ]
+      },
+    ],
   },
   plugins: [
-    new HtmlWebpackPlugin({template: "./index.html"}),
+    new HtmlWebpackPlugin({ template: "./index.html" }),
     new CleanWebpackPlugin(),
-    new CopyWebpackPlugin({patterns:[{ from: "./static", to: "./static" }]}) 
+    new CopyWebpackPlugin({ patterns: [{ from: "./static", to: "./static" }] }),
   ],
   devServer: {
     contentBase: "./index.html",

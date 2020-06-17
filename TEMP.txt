@@ -1,13 +1,6 @@
-import React from "react";
-import ReactDOM from "react-dom"; 
+/* 
 
-import createReactClass from 'create-react-class';
-import './css/style.css';
-import SimpleMap  from './components/pages/Help.jsx'
-
-ReactDOM.render(<SimpleMap />, document.getElementById("root")) 
-
-/* let ImageCount = function(props) {
+let ImageCount = function(props) {
     return (
         <div className="img-box">
             <p className="count">{props.count}</p>
@@ -16,15 +9,15 @@ ReactDOM.render(<SimpleMap />, document.getElementById("root"))
     );
 }
 
-let Block = createReactClass({
+class Block extends React.Component {
     getInitialState() {
         return {
             count: 0
         }
-    },
+    }
     clickUpCount() {
         this.setState({ count: this.state.count + 1})
-       },
+       }
     render() {
         return (<div className='item'>
         <ImageCount imgUrl={this.props.imgUrl} count={this.state.count} onCount={this.clickUpCount}/>
@@ -32,9 +25,9 @@ let Block = createReactClass({
         <p>{this.props.subtitle}</p>
     </div>)
     }
-})
+}
 
-let App = createReactClass({
+export default class Main extends React.Component{
     render() {
         return (
             <div className="block">
@@ -44,7 +37,7 @@ let App = createReactClass({
             </div>
         );
     }
-})
+}
 
 let data = [
     {
@@ -62,15 +55,12 @@ let data = [
     }
 
 ]
- */
-
-
-
+  */
 /**
  * TODO:
  * https://docs.google.com/document/u/0/d/17yEBnzCQ3Uws7ddVpOBPcR9NyiIIJUsTlfIPSY3pWmQ/mobilebasic
  * Создать ебаный Readme.md
- * Страницы: 
+ * Страницы:
  * Главная, Страница просмотра новости, О нас, Помощь, Настройки
  * дока по ui: https://material-ui.com/ru/getting-started/templates/
  * подключить шапку, боковую панель. (Адаптивный бургер)
@@ -80,5 +70,5 @@ let data = [
  * Подключить redux
  * Научиться программировать
  * Когда закончу - выйти и заказать место на кладбище. Press to F <3
- * 
+ *
  */
